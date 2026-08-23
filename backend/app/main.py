@@ -11,14 +11,15 @@ from app.routers import auth_router, vision_router, search_router, rag_router
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    print(f"🚀 Initializing {settings.PROJECT_NAME} v{settings.VERSION}...")
+    print(f"[OmniSight] Initializing {settings.PROJECT_NAME} v{settings.VERSION}...")
     init_db()
     seed_initial_data()
     seed_vector_index()
-    print("✅ OmniSight AI Backend Ready.")
+    print("[OmniSight] Backend is fully ready on http://127.0.0.1:8000")
     yield
     # Shutdown
-    print("🛑 Shutting down OmniSight AI Backend.")
+    print("[OmniSight] Shutting down Backend.")
+
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
