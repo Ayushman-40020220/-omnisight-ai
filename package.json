@@ -2,6 +2,6 @@
   "name": "omnisight-ai-root",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm install --prefix frontend && npm run build --prefix frontend && cp -r frontend/dist/. ."
+    "build": "npm install --prefix frontend && npm run build --prefix frontend && mv frontend/dist ./dist"
   }
 }
