@@ -101,4 +101,4 @@ npm run dev
 ---
 
 ## 📄 Resume Talking Points
-See [RESUME_POINTS.md](file:///C:/Users/Ayushmansahani/.gemini/antigravity-ide/scratch/omnisight-ai/RESUME_POINTS.md) for ready-to-use resume bullet points, metrics, and interview discussion questions.
+See [RESUME_POINTS.md](./RESUME_POINTS.md) for ready-to-use resume bullet points, metrics, and interview discussion questions.

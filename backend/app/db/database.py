@@ -2,8 +2,9 @@ import json
 import sqlite3
 from datetime import datetime
 from typing import List, Dict, Any, Optional
+import os
 
-DB_PATH = "omnisight.db"
+DB_PATH = "/tmp/omnisight.db" if os.getenv("VERCEL") else "omnisight.db"
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
